@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// `RequestError` represents a common error that occurs while building `URLRequest` from `Request`.
 public enum RequestError: Error {

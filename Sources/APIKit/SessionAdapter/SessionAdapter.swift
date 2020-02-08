@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// `SessionTask` protocol represents a task for a request.
 public protocol SessionTask: class {

@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// `ResponseError` represents a common error that occurs while getting `Request.Response`
 /// from raw result tuple `(Data?, URLResponse?, Error?)`.

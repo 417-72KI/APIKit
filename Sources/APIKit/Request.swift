@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// `Request` protocol represents a request for Web API.
 /// Following 5 items must be implemented.
